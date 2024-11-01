@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="--Loading">
+        <div class="position">
+            <img src="images/thumb.jpg" alt="Loading" id="logo">
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <div id="conteudo" style="display: none;">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <li><a href="#">Pokémon Card Generator</a></li>
+            </div>
+        </nav>
+
+        <div id="card" class="pokemon-card" draggable="true">
+            <div class="card-frame">
+                <div class="card-header">
+                    <h3 id="card-text">Pikachu</h3>
+                    <div class="hp">HP 60</div>
+                </div>
+                <div class="card-image-container">
+                    <img id="card-image" src="images/pikachu.png" alt="Pokemon">
+                </div>
+                <div class="card-content">
+                    <div class="pokemon-info">
+                        <p id="desc" class="pokemon-description">Pikachu is a fictional character known for being one of the main protagonists of the Pokemon series.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="generate-button">Generate New Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
